@@ -54,15 +54,5 @@ def server_error():
     return render_template('500.html')
 
 
-@app.route('/charts')
-def charts():
-    return render_template('charts.html')
-
-
-@app.route('/tables')
-def tables():
-    return render_template('tables.html')
-
-
 if __name__ == '__main__':
     app.run(debug=True)
