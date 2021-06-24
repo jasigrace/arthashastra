@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@600&display=swap');
             .flip-card {
               width: 50%;
               float: left;
@@ -51,13 +52,25 @@
               color: white;
               transform: rotateY(180deg);
             }
-            .mySlides {
-                display:none;
-                width: 100px;
+
+            .mySlides {display:none;}
+            .w3-left, .w3-right, .w3-badge {cursor:pointer}
+            .w3-badge {height:13px;width:13px;padding:0}
+
+            @media (max-width : 1028px) {
+              blockquote{
                 height: 100px;
-                border-radius: 50%;
-                margin: 0;
-            }
+                margin-top: 0;
+              }
+              marquee{
+                height: 50px;
+                overflow: hidden;
+              }
+              .blockquote .blockquote__text--credit{
+                margin-top: -70px;
+                font-size: 10px;
+              }
+             }
         </style>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -66,6 +79,6 @@
         <meta name="author" content="" />
         <title>Arthashastra</title>
         <link href="static/css/styles.css" rel="stylesheet" />
-
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>

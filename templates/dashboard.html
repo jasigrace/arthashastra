@@ -5,151 +5,119 @@
             {% include "side.html" %}
             <div id="layoutSidenav_content">
                 <main>
-                    <div class="container-fluid px-4">
+                    <blockquote class="blockquote blockquote--bordered blockquote--quoted">
+                        <p class="blockquote__text">
+                          <marquee direction="up" scrollamount="1">
+                            Empowering the individual means empowering the nation. And empowerment is best served through rapid economic growth with rapid social change.<br>
+                          </marquee>
+                        </p>
+                        <p class="blockquote__text blockquote__text--credit">Abdul Kalam</p>
+                    </blockquote>
+                <div class="container-fluid px-4">
+                    <video width="100%" style="border-radius: 20px;" autoplay muted>
+                        <source src="static/images/front.mp4" type="video/mp4">
+                    </video>
+                    <video width="100%" style="border-radius: 20px;" autoplay muted>
+                        <source src="static/images/middle.mp4" type="video/mp4">
+                    </video>
+                    <video width="100%" style="border-radius: 20px;" autoplay muted>
+                        <source src="static/images/features.mp4" type="video/mp4">
+                    </video>
+                    <div class="quote">
+                                <div>
+                                    <div class="box box1">
+                                        <p>The primary sector of the economy includes any industry involved in the extraction and production of raw materials, such as farming, logging, hunting, fishing, and mining.</p>
+                                        <h2>Primary Sector</h2>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="box box2">
+                                        <p>The secondary sector covers all those activities consisting in varying degrees of processing of raw materials (manufacturing, construction industries).</p>
+                                        <h2>Secondary Sector</h2>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="box box3">
+                                        <p>The service sector consists of the production of services instead of end products. Services (also known as "intangible goods") include attention, advice, access, experience, and affective labor.</p>
+                                        <h2>Tertiary Sector</h2>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="box box1">
+                                        <p>The quaternary sector consists of those industries providing information services, such as computing, ICT, consultancy and R&D.</p>
+                                        <h2>Quaternary Sector</h2>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="box box2">
+                                        <p>The quinary sector of industry is the sector of industry suggested by some economists as comprising health, education, culture, research, police, fire service, and other government industries not intended to make a profit.</p>
+                                        <h2>Quinary Sector</h2>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="box box3">
+                                        <p><img src="static/images/news.png" width="250px" height="250px"></p>
+                                        <h2><a href="{{url_for('news')}}" style="text-decoration: none;">News</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="w3-display-container" >
+                      <video class="mySlides" width="100%" height="100%" style="border-radius: 20px;" autoplay muted>
+                          <source src="static/images/Akbar.mp4" type="video/mp4">
+                      </video>
+                        <video class="mySlides" width="100%" height="100%" style="border-radius: 20px;" autoplay muted>
+                          <source src="static/images/Gandhi.mp4" type="video/mp4">
+                      </video>
+                      <video class="mySlides" width="100%" height="100%" style="border-radius: 20px;" autoplay muted>
+                          <source src="static/images/Modi.mp4" type="video/mp4">
+                      </video>
+                      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                      </div>
+                    </div>
 
-                        <div class="row">
-                            <div style="float:left; width:25%; height:150px;">
-                                <h1 class="mt-4">Economy</h1>
-                                <ol class="breadcrumb mb-4">
-                                    <li class="breadcrumb-item active">Arthashastra</li>
-                                </ol>
-                            </div>
-                            <div style="float:right; width:50%; height:150px; padding: 20px;">
-                              <marquee scrollamount="1" direction="up">
-                                Self reliant India based on 5 pillars of Economy, Infrastructure, System, Demography and Demand, says Prime Minister
-                                </marquee>
-<!--                            <marquee style="padding: 20px;"></marquee>-->
-                            </div>
-                            <div style="float:left; width:25%; padding:20px; height:150px;">
-                                <img class="mySlides" style="margin: 0;" src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Prime_Minister%2C_Shri_Narendra_Modi%2C_in_New_Delhi_on_August_08%2C_2019_%28cropped%29.jpg">
-                              <img class="mySlides" style="margin: 0;" src="https://www.deccanherald.com/sites/dh/files/article_images/2020/05/19/Gandhi%202-1314794103-1571034922.jpg" >
-                              <img class="mySlides" style="margin: 0;" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chanakya_artistic_depiction.jpg" >
-                            </div>
-<!--                            <img src="https://freedesignfile.com/upload/2018/04/Cartoon-farmer-with-tractor-vector.jpg" style="height: 300px; width: 300px; border-radius: 50%">-->
-<!--                            <img src="https://classroomclipart.com/images/gallery/Animations/Chemistry/chemical-industry-animated.jpg" style="height: 300px; width: 300px; border-radius: 50%">-->
-<!--                            <img src="https://freedesignfile.com/upload/2018/04/Cartoon-farmer-with-tractor-vector.jpg" style="height: 300px; width: 300px; border-radius: 50%">-->
-<!--                            <img src="https://freedesignfile.com/upload/2018/04/Cartoon-farmer-with-tractor-vector.jpg" style="height: 300px; width: 300px; border-radius: 50%">-->
-<!--                            <img src="https://freedesignfile.com/upload/2018/04/Cartoon-farmer-with-tractor-vector.jpg" style="height: 300px; width: 300px; border-radius: 50%">-->
-                        </div>
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                {% if heading: %}
-                                    {{heading}}
-                                {% else: %}
-                                    Lecture
-                                {% endif %}
-                            </div>
-                            <div class="flip-card">
-                              <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                  <img src="https://freedesignfile.com/upload/2018/04/Cartoon-farmer-with-tractor-vector.jpg" alt="Avatar" style="height:300px; width: 300px; border-radius: 50%;">
-<!--                                    style=""margin:20px; height: 300px; width: 300px; border-radius: 50%-->
-                                </div>
-                                <div class="flip-card-back">
-                                  <h1>John Doe</h1>
-                                  <p>Architect & Engineer</p>
-                                  <p>We love that guy</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="flip-card">
-                              <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                  <img src="https://freedesignfile.com/upload/2018/04/Cartoon-farmer-with-tractor-vector.jpg" alt="Avatar" style="height:300px; width: 300px; border-radius: 50%;">
-<!--                                    style=""margin:20px; height: 300px; width: 300px; border-radius: 50%-->
-                                </div>
-                                <div class="flip-card-back">
-                                  <h1>John Doe</h1>
-                                  <p>Architect & Engineer</p>
-                                  <p>We love that guy</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="flip-card">
-                              <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                  <img src="https://freedesignfile.com/upload/2018/04/Cartoon-farmer-with-tractor-vector.jpg" alt="Avatar" style="height:300px; width: 300px; border-radius: 50%;">
-<!--                                    style=""margin:20px; height: 300px; width: 300px; border-radius: 50%-->
-                                </div>
-                                <div class="flip-card-back">
-                                  <h1>John Doe</h1>
-                                  <p>Architect & Engineer</p>
-                                  <p>We love that guy</p>
-                                </div>
-                              </div>
-                            </div>
 
-                            <div class="card-body">
-                                <iframe width="100%" height="345" src={{video}}>
-                                </iframe>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">Primary Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">Warning Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-success text-white mb-4">
-                                    <div class="card-body">Success Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body">Danger Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </main>
+                <br>
                 {% include "footer.html" %}
             </div>
         </div>
         <script>
-            var myIndex = 0;
-            carousel();
+            var slideIndex = 1;
+            showDivs(slideIndex);
 
-            function carousel() {
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
               var i;
               var x = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
               for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
               }
-              myIndex++;
-              if (myIndex > x.length) {myIndex = 1}
-              x[myIndex-1].style.display = "block";
-              setTimeout(carousel, 5000); // Change image every 2 seconds
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+              }
+              x[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " w3-white";
             }
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="static/js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="static/assets/demo/chart-area-demo.js"></script>
-        <script src="static/assets/demo/chart-bar-demo.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-        <script src="static/js/datatables-simple-demo.js"></script>
     </body>
 </html>

@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - SB Admin v7.0.1 (https://startbootstrap.com/template/sb-admin)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-sb-admin/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap v5.0.1 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11245,4 +11235,170 @@ body {
   width: 20px !important;
   font-size: 0.75rem;
   border-radius: 0.25rem !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Benne:20')
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Benne', sans-serif;
+}
+
+.quote{
+    justify-content: space-between;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.quote .box{
+    position: relative;
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+
+.quote .box:hover{
+    box-shadow: -20px 50px 100px rgba(0, 0, 0, .5);
+}
+
+.quote .box p{
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.quote .box:hover p{
+    color: #fff;
+}
+
+.quote .box h2{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.quote .box:hover h2{
+    color: #fff;
+}
+
+.quote .box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .2);
+    pointer-events: none;
+}
+
+.quote .box:after{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    opacity: .1;
+    background: rgba(255, 255, 255, .2);
+    pointer-events: none;
+    filter: invert(1);
+}
+
+.quote .box:hover:after{
+    filter: invert(0);
+}
+
+.quote .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    background: #000;
+    transition: 0.5s;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+.quote .box.box1:hover ~ .bg,
+.quote .box.box1:hover{
+    opacity: 1;
+    background: linear-gradient(#03A9F4,#E91E63);
+}
+
+.quote .box.box2:hover ~ .bg,
+.quote .box.box2:hover{
+    opacity: 1;
+    background: linear-gradient(#FFC107,#19fd36);
+}
+
+.quote .box.box3:hover ~ .bg,
+.quote .box.box3:hover{
+    opacity: 1;
+    background: linear-gradient(#FFC107,#E91E63);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap');
+.blockquote{
+    margin: 10px 20px;
+    padding: 20px;
+    background: #36C291;
+    border: 1px solid #564EC7;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.blockquote--bordered{
+    border-left-width: 10px;
+}
+
+.blockquote--quoted::before{
+    content: "\201c";
+    font-size: 50px;
+    color: #009578;
+    display: block;
+    margin-bottom: -40px;
+    margin-top: -20px;
+}
+
+.blockquote__text{
+    font-family: 'Gelasio', serif;
+    font-style: italic;
+    font-size: 1.15em;
+    line-height: 1.5;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.blockquote__text:not(:last-child){
+    margin-bottom: 1em;
+
+}
+
+.blockquote__text--credit{
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+}
+
+.blockquote__text--credit::before{
+    content: "\2014\0020"
 }

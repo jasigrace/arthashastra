@@ -15,11 +15,21 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{url_for('home', id=1)}}"><input type="checkbox"><span style="margin: 0 5px;">Primary</span></a>
-                                    <a class="nav-link" href="{{url_for('home', id=2)}}"><input type="checkbox"><span style="margin: 0 5px;">Secondary</span></a>
-                                    <a class="nav-link" href="{{url_for('home', id=3)}}"><input type="checkbox"><span style="margin: 0 5px;">Tertiary</span></a>
-                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                    <a class="nav-link" href="{{url_for('home', id=1)}}"><input type="checkbox"><span style="margin: 0 5px;"> Lecture 1-What is Money?</span></a>
+                                    <a class="nav-link" href="{{url_for('home', id=2)}}"><input type="checkbox"><span style="margin: 0 5px;">Lecture 2-About Goods and Services</span></a>
+                                    <a class="nav-link" href="{{url_for('home', id=3)}}"><input type="checkbox"><span style="margin: 0 5px;">Lecture 3-Who are Producers and Consumers?</span></a>
+                                    <a class="nav-link" href="{{url_for('home', id=4)}}"><input type="checkbox"><span style="margin: 0 5px;">Lecture 4-History of Money</span></a>
+                                    <a class="nav-link" href="{{url_for('home', id=5)}}"><input type="checkbox"><span style="margin: 0 5px;">Lecture 5-Save Money</span></a>
+                                    <a class="nav-link" href="{{url_for('home', id=6)}}"><input type="checkbox"><span style="margin: 0 5px;">Lecture 6-Sudden rise in prices</span></a>
+                                    <a class="nav-link" href="{{url_for('home', id=7)}}"><input type="checkbox"><span style="margin: 0 5px;">Lecture 7-Banks</span></a>
+                                    <a class="nav-link" href="{{url_for('home', id=8)}}"><input type="checkbox"><span style="margin: 0 5px;">Lecture 8-Minting of coins</span></a>
+                                    <a class="nav-link" href="{{url_for('home', id=9)}}"><input type="checkbox"><span style="margin: 0 5px;">Lecture 9-Functions of Money</span></a>
+                                    <a class="nav-link" href="{{url_for('home', id=10)}}"><input type="checkbox"><span style="margin: 0 5px;">Lecture 10-Evolution of Money</span></a>
+                                    <a class="nav-link" href="{{url_for('home', id=11)}}"><input type="checkbox"><span style="margin: 0 5px;">Lecture 11-Primary</span></a>
+                                    <a class="nav-link" href="{{url_for('home', id=12)}}"><input type="checkbox"><span style="margin: 0 5px;">Lecture 12-Secondary</span></a>
+                                    <a class="nav-link" href="{{url_for('home', id=13)}}"><input type="checkbox"><span style="margin: 0 5px;">Lecture 13-Tertiary</span></a>
+<!--                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>-->
+<!--                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>-->
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -41,24 +51,35 @@
                                         </nav>
                                     </div>
                                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                        Error
+                                        Levels
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
                                     <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="{{ url_for('unauthorized') }}">401 Page</a>
-                                            <a class="nav-link" href="{{ url_for('page_not_found') }}">404 Page</a>
-                                            <a class="nav-link" href="{{ url_for('server_error') }}">500 Page</a>
+                                            <a class="nav-link" href="{{ url_for('levels', level='practice') }}">Practice</a>
+                                            <a class="nav-link" href="{{ url_for('levels', level='easy') }}">Easy</a>
+                                            <a class="nav-link" href="{{ url_for('levels', level='medium') }}">Medium</a>
+                                            <a class="nav-link" href="{{ url_for('levels', level='hard') }}">Hard</a>
                                         </nav>
                                     </div>
                                 </nav>
                             </div>
-
+                            <div class="sb-sidenav-menu-heading">Addons</div>
+                            <a class="nav-link" href="{{url_for('news')}}">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                News
+                            </a>
+<!--                            <a class="nav-link" href="tables.html">-->
+<!--                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>-->
+<!--                                Tables-->
+<!--                            </a>-->
                         </div>
                     </div>
+                    {% if name: %}
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
-                        Start Bootstrap
+                        {{name}}
                     </div>
+                    {% endif %}
                 </nav>
             </div>
